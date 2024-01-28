@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: black;
+    align-items:center;
+}
+.team-section{
+    margin-top: 50px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.team-title h1{
+    margin: 50px;
+    text-align: center;
+    position: relative;
+}
+.team-cards{
+    width: 75%;
+    height: 325px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    margin:30px auto;
+}
+.card{
+    /* width: 50%; */
+    background-color: #fff;
+    color: #060721;
+    margin: 5px;
+    padding:20px 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.card:hover{
+    border-radius: 10px;
+    height: 350px;
+    background-color: rgb(88, 223, 165);
+    cursor: pointer;
+    
+
+}
+.member-image:hover img{
+    transform: translateY(-80px);
+    border-radius: 10px;
+}
+.member-image img{
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+    box-shadow: 10px 10px 22px #3336;
+    transition: 1s;
+    z-index: 99;
+}
+
+.detail{
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-80px);
+}
+.card:hover .detail{
+    opacity: 1;
+    transform: translateY(-30px);
+    color: black;
+}
+.detail h3{
+    color: #000000;
+    font-size: 25px;
+} 
+.detail h4{
+    color:#000000;
+    font-size: 13px;
+}
+@media screen and (min-width:0px) and (max-width:800px){
+    .team-cards{
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+@media screen and (min-width:0px) and (max-width:888px){
+    .team-cards{
+        justify-content: center;
+        
+    }
+}
+@media screen and (min-width:1764px) and (max-width:2187px){
+    .team-cards{
+        justify-content: center;
+        
+    }
+}
+@media screen and (min-width:1440px) and (max-width:1764px){
+    .team-cards{
+        justify-content: center;
+        
+    }
+}
+@media screen and (min-width:0px) and (max-width:1440px){
+    .team-cards{
+        justify-content: center;
+        
+    }
+}
